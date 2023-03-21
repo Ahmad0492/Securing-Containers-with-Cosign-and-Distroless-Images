@@ -3,6 +3,7 @@ Any container-based architecture must include security measures for container de
 We’ll go over how to secure containers using Cosign and Distroless images in this article, along with the commands and code that are required to carry out these tasks.
 # What is Cosign?
 ![image](https://user-images.githubusercontent.com/106924407/226722608-0f76d26a-1c33-4cd8-a002-0111e113b342.png)
+
 Cosign is an open-source tool for container image signing and verification. It enables users to sign and verify container images, providing an extra layer of security by ensuring that only trusted images are deployed.
 
 To get started with Cosign, you’ll need to install it on your system. You can do this using the following command:
@@ -23,6 +24,7 @@ This will confirm that the image has not been tampered with by comparing the sig
 
 # What are Distroless images?
 ![image](https://user-images.githubusercontent.com/106924407/226723227-d53ba189-405e-42c6-98cc-88a638eef4d0.png)
+
 The term “distroless images” refers to container images that only include the application and its runtime dependencies, and no other programmers or hardware. Because there are fewer attack surfaces for potential attackers, they are more secure as a result.
 
 You can use Distroless images by writing a Dockerfile that makes use of a Distroless image as the application’s base image. An illustration Dockerfile for a basic Python Flask application is provided here:
